@@ -32,7 +32,7 @@ def chunk_txt(txt, chunk_size=500):
     for i in range(0, len(words), chunk_size):
         yield " ".join(words[i:i+chunk_size])
         
-def load_all_documents(folder="Transcripts"):
+def load_all_documents(folder="Data"):
     documents = []
     for filename in os.listdir(folder):
         path = os.path.join(folder, filename)
